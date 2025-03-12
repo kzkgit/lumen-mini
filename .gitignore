@@ -1,0 +1,7 @@
+/vendor
+/nbproject
+/.idea
+.env
+.phpunit.result.cache
+.editorconfig
+nohup.out
