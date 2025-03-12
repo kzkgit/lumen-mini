@@ -1,1 +1,0 @@
-{"virtualbox":{"/vagrant":{"disabled":false,"guestpath":"/vagrant","hostpath":"D:/vagrant/lumen-mini","type":"virtualbox","__vagrantfile":true},"/vagrant/logs":{"guestpath":"/vagrant/logs","hostpath":"D:/vagrant/lumen-mini/storage/logs","disabled":false,"__vagrantfile":true}}}

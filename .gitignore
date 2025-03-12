@@ -1,6 +1,7 @@
 /vendor
 /nbproject
 /.idea
+.vagrant
 .env
 .phpunit.result.cache
 .editorconfig
