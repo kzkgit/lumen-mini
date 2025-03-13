@@ -39,7 +39,7 @@ class WeatherController extends Controller
         if ($result === null || !is_array($result->results) || sizeof($result->results) == 0)
         {
             curl_close($curl);
-            return 'error';
+            return response()->json([], 422);
         }
         
         $result = $result->results[0];
@@ -63,7 +63,7 @@ class WeatherController extends Controller
         if ($result === null)
         {
             curl_close($curl);
-            return 'error';
+            return response()->json([], 422);
         }
 
         curl_close($curl);
@@ -72,6 +72,5 @@ class WeatherController extends Controller
             'city' => $name,
             'temperature' => "{$result->current->temperature_2m} {$result->current_units->temperature_2m}"
         ]);
-        //return response()->json(['success'=>'The form has been sent. We will get back to you as soon as possible.']);
     }
 }
